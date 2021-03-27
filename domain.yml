@@ -1,0 +1,61 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet:
+    use_entities: false
+- goodbye:
+    use_entities: false
+- bot_challenge:
+    use_entities: false
+- get_pokemon:
+    use_entities: true
+- get_type:
+    use_entities: true
+- get_generation:
+    use_entities: true
+- get_area:
+    use_entities: true
+- get_legendary:
+    use_entities: true
+- get_recommendation:
+    use_entities: true
+
+entities:
+- pokemon_name
+- generation
+
+slots:
+  pokemon_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  generation:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+
+responses:
+  utter_greet:
+  - text: Hey! I am the Pokédex, I gathered a lot of information about Pokémons! What Pokémon are you looking for?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+
+actions:
+- action_get_type
+- action_get_generation
+- action_get_area
+- action_get_legendary
+- action_get_recommendation
+- action_get_pokemon
+forms: {}
+e2e_actions: []

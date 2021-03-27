@@ -1,0 +1,150 @@
+version: "2.0"
+
+stories:
+
+- story: path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_pokemon
+    entities:
+    - pokemon_name: Gible
+  - action: action_get_pokemon
+  - intent: get_type
+  - action: action_get_type
+  - intent: get_generation
+  - action: action_get_generation
+  - intent: get_area
+  - action: action_get_area
+  - intent: get_legendary
+  - action: action_get_legendary
+  - intent: get_recommendation
+  - action: action_get_recommendation
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_pokemon
+    entities:
+    - pokemon_name: Uxie
+  - action: action_get_pokemon
+  - intent: get_area
+  - action: action_get_area
+  - intent: get_generation
+  - action: action_get_generation
+  - intent: get_recommendation
+  - action: action_get_recommendation
+  - intent: get_legendary
+  - action: action_get_legendary
+  - intent: get_type
+  - action: action_get_type
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_pokemon
+    entities:
+    - pokemon_name: Jumpluff
+  - action: action_get_pokemon
+  - intent: get_legendary
+  - action: action_get_legendary
+  - intent: get_area
+  - action: action_get_area
+  - intent: get_type
+  - action: action_get_type
+  - intent: get_recommendation
+  - action: action_get_recommendation
+  - intent: get_generation
+  - action: action_get_generation
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_pokemon
+    entities:
+    - pokemon_name: Onix
+  - action: action_get_pokemon
+  - intent: get_area
+  - action: action_get_area
+  - intent: get_recommendation
+  - action: action_get_recommendation
+  - intent: get_legendary
+  - action: action_get_legendary
+  - intent: get_generation
+  - action: action_get_generation
+  - intent: get_type
+  - action: action_get_type
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_pokemon
+    entities:
+    - pokemon_name: Noctowl
+  - action: action_get_pokemon
+  - intent: get_type
+  - action: action_get_type
+  - intent: get_recommendation
+  - action: action_get_recommendation
+  - intent: get_generation
+  - action: action_get_generation
+  - intent: get_area
+  - action: action_get_area
+  - intent: get_legendary
+  - action: action_get_legendary
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path 6
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_pokemon
+    entities:
+    - pokemon_name: Shinx
+  - action: action_get_pokemon
+  - intent: get_recommendation
+  - action: action_get_recommendation
+  - intent: get_type
+  - action: action_get_type
+  - intent: get_generation
+  - action: action_get_generation
+  - intent: get_legendary
+  - action: action_get_legendary
+  - intent: get_area
+  - action: action_get_area
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path 7
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_pokemon
+    entities:
+    - pokemon_name: Shinx
+  - action: action_get_pokemon
+  - intent: get_legendary
+  - action: action_get_legendary
+  - intent: get_type
+  - action: action_get_type
+  - intent: get_generation
+  - action: action_get_generation
+  - intent: get_recommendation
+  - action: action_get_recommendation
+  - intent: get_area
+  - action: action_get_area
+  - intent: goodbye
+  - action: utter_goodbye

@@ -1,0 +1,179 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: get_pokemon
+  examples: |
+    - [Pikachu](pokemon_name)
+    - Can I have information about [Pikachu](pokemon_name)?
+    - Could you give me information about [Charizard](pokemon_name)?
+    - I want to know more about [Charmander](pokemon_name).
+    - I would like to learn more about [Abra](pokemon_name).
+    - I'd like to find out more about [Totodile](pokemon_name).
+    - I am interested to know more about [Sudowoodo](pokemon_name).
+    - I want to discover [Raikou](pokemon_name).
+    - I would like to ask a question about [Kakuna](pokemon_name).
+    - I have a question about [Jirachi](pokemon_name).
+    - Can I question you about [Groudon](pokemon_name).
+    - Do you know [Squirtle](pokemon_name)?
+    - Can you give me information about [Charizard](pokemon_name)?
+    - Tell me more about [Shinx](pokemon_name).
+
+- intent: get_type
+  examples: |
+    - type
+    - Types
+    - Type ?
+    - types ?
+    - What is its type?
+    - Could you give me its types.
+    - Could you give me its type.
+    - Its type.
+    - Its types.
+    - What types does it have?
+    - What type does it have?
+    - I want to know its type.
+    - I want to know its types.
+    - Tell me its types please.
+    - Tell me its type please.
+    - Tell me its type.
+    - Tell me its types.
+    - Give me the types of this pokemon.
+    - Give me the type of this pokemon.
+    - Give me this pokemon's type.
+    - Give me this pokemon's types.
+    - I don't remember its type, could you help me?
+    - I don't remember its types, could you help me?
+    - I forgot what are its type, help me!
+    - I forgot what are its types, help me!
+    - I am interested in its type.
+    - I am interestied in its types.
+    - What are its types?
+    - What is its type?
+
+- regex: generation
+  examples: |
+    -\d{1}
+- intent: get_generation
+  examples: |
+    - generation
+    - generation?
+    - Generation
+    - Tell me if I'm wrong, it is from generation [2](generation).
+    - It belongs to the generation [4](generation), right?
+    - It belongs to the generation [4](generation),right?
+    - Does it belong to the generation [4](generation)?
+    - It is from generation [1](generation)?
+    - I want to know at what generation it belongs.
+    - Is it from the generation [8](generation)?
+    - It appeared during what generation?
+    - It comes from the generation [9](generation)?
+    - When did it appeared?
+    - When did it make it first apparition?
+    - When did we discovered it?
+    - When was it discovered ?
+    - What generation introduced it?
+    - To what generation it belongs ?
+
+- intent: get_area
+  examples: |
+    - Area
+    - areas
+    - area?
+    - Areas?
+    - Where we find it?
+    - Where can I find it?
+    - In what areas does it live?
+    - Tell me what its locations are?
+    - Where does he live?
+    - Help me find him!
+    - Do you know its location?
+    - In what locations I will find it?
+    - Where will I meet it?
+    - How to find it?
+    - What is its location?
+    - In what places I will encounter it?
+    - Where do we encounter it ?
+    - Where to look for it?
+    - Give me its locations.
+
+- intent: get_legendary
+  examples: |
+    - Does this pokemon is legendary?
+    - It is a legendary pokemon?
+    - It is legendary?
+    - Does it belongs to the legendary pokemons?
+    - I want to know if it is legendary?
+    - Tell me if it is a legendary pokemon?
+    - It's a legendary?
+    - Do you know if it's legendary?
+    - I wonder if it is legendary?
+    - Does it is legendary?
+    - This pokemon is legendary?
+    - legendary
+    - Legendary
+    - legendary?
+    - Lengendary.
+    - Tell me if is legendary?
+    - Tell me if this pokemon is legendary?
+
+- intent: get_recommendation
+  examples: |
+    - Any recommendation?
+    - Can you suggest pokemon like it?
+    - Suggest me pokemon like him, please?
+    - Suggest me pokemon like him,please?
+    - I like this pokemon, give me recommendation.
+    - Do you have any recommendation?
+    - I really like this pokemon, any suggestions?
+    - Recommendation?
+    - recommendations?
+    - Recommendations?
+    - Recommendation ?
+    - Any suggestions?
+    - Give me some suggestions?
+    - Could you find pokemons similar to it?
+    - Give me pokemon similar to him.
+    - Do you know pokemons which are similar?
+    - Do you know pokemon which is similar?
+    - Do you have any suggestions?
+    - I want to discover pokemon similar to it.
+    - Make me discover pokemon similar to it.
+    - Give me recommendations.
+    - Suggestions?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
